@@ -1,5 +1,5 @@
 #include <iostream>
-#include <locale>  // Include the <locale> header for setlocale
+#include <locale> 
 
 using namespace std;
 
@@ -25,7 +25,7 @@ void problem1() {
         cout << "Sum of digits, higher than 5: " << sum << endl;
     }
     else {
-        cout << "No digit was higher than 5." << endl;  // Added endl for readability
+        cout << "No digit was higher than 5." << endl;
     }
 
 }
@@ -33,7 +33,6 @@ void problem1() {
 void problem2() {
     int x;
 
-    // Set the locale for Ukrainian
     setlocale(LC_ALL, "uk_UA.UTF-8");
 
     cout << "Enter a number of a month: ";
@@ -41,40 +40,40 @@ void problem2() {
 
     switch (x) {
     case 1:
-        cout << "January, Січень" << endl;  // Corrected the Ukrainian month name
+        cout << "January" << endl;
         break;
     case 2:
-        cout << "February, Лютий" << endl;  // Corrected the Ukrainian month name
+        cout << "February" << endl;
         break;
     case 3:
-        cout << "March, Березень" << endl;
+        cout << "March" << endl;
         break;
     case 4:
-        cout << "April, Квітень" << endl;  // Corrected the Ukrainian month name
+        cout << "April" << endl;
         break;
     case 5:
-        cout << "May, Травень" << endl;
+        cout << "May" << endl;
         break;
     case 6:
-        cout << "June, Червень" << endl;
+        cout << "June" << endl;
         break;
     case 7:
-        cout << "July, Липень" << endl;
+        cout << "July" << endl;
         break;
     case 8:
-        cout << "August, Серпень" << endl;
+        cout << "August" << endl;
         break;
     case 9:
-        cout << "September, Вересень" << endl;
+        cout << "September" << endl;
         break;
     case 10:
-        cout << "October, Жовтень" << endl;
+        cout << "October" << endl;
         break;
     case 11:
-        cout << "November, Листопад" << endl;
+        cout << "November" << endl;
         break;
     case 12:
-        cout << "December, Грудень" << endl;
+        cout << "December" << endl;
         break;
     default:
         cout << "Invalid month number. Please enter a number between 1 and 12." << endl;
